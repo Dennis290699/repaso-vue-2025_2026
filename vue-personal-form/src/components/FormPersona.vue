@@ -84,51 +84,68 @@ export default {
 
 <style scoped>
 .form-container {
-    margin: 25px;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+  margin: 25px;
+  padding: 30px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  width: 100%;
+  max-width: 400px;
 }
 
 .title {
-    margin-bottom: 15px;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #495057;
+}
+
+.data-form {
+  margin-bottom: 20px;
 }
 
 .data-form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #555;
 }
 
 .data-form input {
-    display: block;
-    margin-bottom: 10px;
-    padding: 7px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 100%;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: border-color 0.25s ease;
+}
+
+.data-form input:focus {
+  outline: none;
+  border-color: #81c784;
+  box-shadow: 0 0 0 3px rgba(129, 199, 132, 0.15);
 }
 
 .btn-container {
-    text-align: center;
-    margin-top: 15px;
+  text-align: center;
+  margin-top: 25px;
+}
+.btn-container button {
+  background-color: #81c784;
+  color: white;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.15s ease;
 }
 
-button {
-    padding: 10px 18px;
-    border: none;
-    border-radius: 8px;
-    background-color: #4f81c7;
-    color: white;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-button:hover {
-    background-color: #3b68a0;
+.btn-container button:hover {
+  background-color: #a3d9a5;
+  transform: translateY(-2px);
 }
 
 .msg-container {

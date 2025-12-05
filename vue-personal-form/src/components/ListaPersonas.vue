@@ -26,18 +26,19 @@ export default {
 </script>
 
 <style scoped>
-
-.list-container ul {
-    list-style: none;
-    padding: 0;
+.list-container li {
+  margin: 12px 0;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-size: 16px;
+  color: #495057;
+  transition: transform 0.2s ease;
 }
 
-.list-container li {
-    margin: 15px;
-    padding: 8px;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
+.list-container li:hover {
+  transform: scale(1.02);
 }
 </style>
